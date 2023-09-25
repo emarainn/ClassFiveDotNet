@@ -50,7 +50,7 @@
 
             Console.WriteLine($"\nYour new weapon is: {newWeapon.Name}\nYour new armor is: {newArmor.Name}");
 
-            ICombatant fighter = new Fighter("Fighter Fred", armor, sword);
+           ICombatant fighter = new Fighter("Fighter Fred", newArmor, newWeapon);
             ICombatant badGuy = new Fighter("Scarry Monster", armor, sword);
 
             fighter.Attack(badGuy);
